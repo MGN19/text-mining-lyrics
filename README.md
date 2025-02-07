@@ -157,5 +157,19 @@ jupyter notebook 1_Classification.ipynb
 #### Step 4: Perform Sentiment Analysis
 jupyter notebook 3_SentimentAnalysis.ipynb
 
+<br>
 
+---
 
+## 📚 Lessons Learned & Future Improvements
+
+### 1. **Data Leakage Issue** 🚨
+
+Data preprocessing steps such as scaling, tokenization, and cleaning were applied to the entire dataset before splitting it into training and validation sets. This approach inadvertently allowed information from the validation set to influence the training set, leading to **data leakage**. This can result in overly optimistic performance estimates, as the model has already "seen" some of the validation data during training. To avoid this, preprocessing should have been done **after** splitting the dataset. 
+
+### 2. **Hyperparameter Optimization** ⚙️
+
+Additionally, using **`PredefinedSplit`** from `sklearn.model_selection` for handling training and validation splits would have prevented leakage by ensuring that the splits were explicitly defined, and no data from the validation set was used during the model’s training phase.
+
+### 3. **Future Improvements:**
+- Experiment with **data augmentation** or other techniques to create more robust models in the presence of imbalanced or limited datasets.
