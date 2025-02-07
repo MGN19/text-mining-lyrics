@@ -84,6 +84,8 @@ We analyzed the emotional undertones of song lyrics using two rule-based approac
 - **Sentiment vs. Views**: Songs with more extreme emotions (either positive or negative) tended to receive more views, especially in the 'rap' genre.
 - **Yearly Trends**: Sentiment analysis revealed that certain genres, such as 'rap,' have become more negative over the years, while 'rock' and 'rb' have become more positive.
 
+<br>
+
 ---
 
 ## 🔎 Model Evaluation
@@ -91,6 +93,8 @@ We analyzed the emotional undertones of song lyrics using two rule-based approac
 - **F1 Score**: The best F1-score obtained for genre classification was **0.608** on the training data.
 - **Confusion Matrix**: The model performed well with 'pop' and 'rap' genres but struggled with 'country' and 'rb'.
 - **Metrics**: Precision, recall, and F1-scores for various genres were calculated, revealing the model's tendency to favor 'pop' and misclassify genres like 'country' and 'rb'.
+
+<br>
 
 ---
 
@@ -111,6 +115,8 @@ We analyzed the emotional undertones of song lyrics using two rule-based approac
 - Data imbalances and limited computational resources were key challenges throughout the project.
 - Despite trying various techniques, the model performance did not exceed an F1-score of **0.61**, and there was a significant bias towards the 'pop' genre.
 
+<br>
+
 ---
 
 ## 🚀 Running the Code
@@ -120,36 +126,35 @@ We analyzed the emotional undertones of song lyrics using two rule-based approac
 git clone https://github.com/MGN19/text-mining-lyrics.git
 ```
 
-## 🗂️ Required Files to Run the Project
+<br>
 
-### 1. **`shortcuts.py`** 📜
+### 🗂️ Required Files to Run the Project
+
+#### 1. **`shortcuts.py`** 📜
 This Python file contains utility functions that are used in the notebooks.
 
-### 2. **`0_Preprocessing.ipynb`** 🧹
+#### 2. **`0_Preprocessing.ipynb`** 🧹
 This notebook handles the **data preprocessing**.
 
-### 3. **`1_Classification.ipynb`** 🏷️
+#### 3. **`1_Classification.ipynb`** 🏷️
 This notebook performs **genre classification**.
 
-### 4. **`3_SentimentAnalysis.ipynb`** 💬
+#### 4. **`3_SentimentAnalysis.ipynb`** 💬
 This notebook performs **sentiment analysis**.
 
-### To Run the Project, Execute the Following Steps:
-```bash
-# Clone the repository
-git clone https://github.com/MGN19/text-mining-lyrics.git
-```
-# Step 1: Functions needed 
+<br>
+
+### Run the notebooks in sequence:
+#### Step 1: Functions needed 
 jupyter notebook shortcuts.py
 
-# Run the notebooks in sequence:
-# Step 2: Preprocess the data
+#### Step 2: Preprocess the data
 jupyter notebook 0_Preprocessing.ipynb
 
-# Step 3: Run Classification
+#### Step 3: Run Classification
 jupyter notebook 1_Classification.ipynb
 
-# Step 4: Perform Sentiment Analysis
+#### Step 4: Perform Sentiment Analysis
 jupyter notebook 3_SentimentAnalysis.ipynb
 
 
